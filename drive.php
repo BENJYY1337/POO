@@ -17,21 +17,23 @@ $Vehicle1->engine_start();
 
 <body>
 
-    <div class="jumbotron">
-        <h1 class="display-4">VESLA MODEL 1337</h1>
-        <p class="lead">Atomic vehicle by Benjamin Pernot</p>
-        <hr class="my-4">
-        <p>Wheel condition:
-            <?php
-            echo $Vehicle1->wheel_condition() == true ? 'Good' : 'Bad';
-            ?></p>
-        <p>Fuel level: <?php echo $Vehicle1->fuel_level() ?>%</p>
-        <p>Engine power: <?php echo $Vehicle1->engine_power() ?></p>
-        <p>Engine state:
-            <?php
-            echo $Vehicle1->engine_state() == true ? 'Start' : 'Stop';
-            ?></p>
-        <a class="btn btn-primary btn-lg" href="drive.php" role="button">Start & Stop</a>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">VESLA MODEL 1337</h1>
+            <p class="lead">Atomic vehicle by Benjamin Pernot</p>
+            <hr class="my-4">
+            <p>Wheel condition:
+                <?php
+                echo $Vehicle1->wheel_condition() == true ? 'Good' : 'Bad';
+                ?></p>
+            <p>Fuel level: <?php echo $Vehicle1->fuel_level() ?>%</p>
+            <p>Engine power: <?php echo $Vehicle1->engine_power() ?></p>
+            <p>Engine state:
+                <?php
+                echo $Vehicle1->engine_state() == true ? 'Start' : 'Stop';
+                ?></p>
+            <a class="btn btn-primary btn-lg" href="drive.php" role="button">Start & Stop</a>
+        </div>
     </div>
 
 </body>
