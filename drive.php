@@ -2,7 +2,7 @@
 require "vehicle.php";
 $Vehicle1 = new Vehicle(true, 100, vehicle::LOW_ENGINE_POWER);
 $Vehicle1->engine_start();
-var_dump($Vehicle1);
+// var_dump($Vehicle1);
 ?>
 
 <!DOCTYPE html>
