@@ -1,7 +1,8 @@
 <?php
 require "vehicle.php";
-$Vehicle1 = new Vehicle(true, 100, vehicle::LOW_ENGINE_POWER);
+$Vehicle1 = new Vehicle(true, 100, Vehicle::LOW_ENGINE_POWER, Vehicle::toHonk());
 $Vehicle1->engine_start();
+$Vehicle1::toHonk();
 // var_dump($Vehicle1);
 ?>
 
