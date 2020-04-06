@@ -1,8 +1,8 @@
 <?php
 require "vehicle.php";
-$Vehicle1 = new Vehicle(true, false);
+$Vehicle1 = new Vehicle(true, 100, vehicle::LOW_ENGINE_POWER);
 $Vehicle1->engine_start();
-// var_dump($Vehicle1);
+var_dump($Vehicle1);
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +26,7 @@ $Vehicle1->engine_start();
             echo $Vehicle1->wheel_condition() == true ? 'Good' : 'Bad';
             ?></p>
         <p>Fuel level: <?php echo $Vehicle1->fuel_level() ?>%</p>
+        <p>Engine power: <?php echo $Vehicle1->engine_power() ?></p>
         <p>Engine state:
             <?php
             echo $Vehicle1->engine_state() == true ? 'Start' : 'Stop';
