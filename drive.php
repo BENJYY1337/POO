@@ -1,6 +1,6 @@
 <?php
 require "vehicle.php";
-$Vehicle1 = new Vehicle();
+$Vehicle1 = new Vehicle(true, false);
 $Vehicle1->engine_start();
 // var_dump($Vehicle1);
 ?>
