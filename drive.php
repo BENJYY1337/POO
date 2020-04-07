@@ -1,4 +1,9 @@
 <?php
+
+/**
+ * @author Benjamin Pernot.
+ */
+
 require "vehicle.php";
 $Vehicle1 = new Vehicle(true, 100, Vehicle::LOW_ENGINE_POWER);
 $Vehicle1->engine_start();

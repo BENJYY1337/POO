@@ -1,4 +1,9 @@
 <?php
+
+/**
+ * @author Benjamin Pernot.
+ */
+
 class Vehicle
 {
     private $_wheel_condition = true; // Etat des pneus ( TRUE par defaut)
