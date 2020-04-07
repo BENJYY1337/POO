@@ -17,6 +17,13 @@ class Vehicle
     private $_engine_state = FALSE;
     private $_engine_power;
     private static $_honk = 'Tuuut Tuut';
+
+    /**
+     * @var int puissance moteur faible
+     * @var int puissance moteur moyenne
+     * @var int puissance moteur élevée
+     */
+
     const LOW_ENGINE_POWER = 90;
     const MID_ENGINE_POWER = 110;
     const HIGH_ENGINE_POWER = 130;
@@ -30,7 +37,6 @@ class Vehicle
     {
         $this->_wheel_condition = $_wheel_condition;
         $this->_fuel_level = $_fuel_level;
-        $this->_fuel_level = 100;
         $this->_engine_power = $_engine_power;
     }
     public function engine_start()
