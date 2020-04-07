@@ -33,8 +33,14 @@ $Vehicle1::toHonk();
                 <?php
                 echo $Vehicle1->wheel_condition() == true ? 'Good' : 'Bad';
                 ?></p>
-            <p>Fuel level: <?php echo $Vehicle1->fuel_level() ?>%</p>
-            <p>Engine power: <?php echo $Vehicle1->engine_power() ?></p>
+            <p>Fuel level:
+                <?php
+                echo $Vehicle1->fuel_level()
+                ?>%</p>
+            <p>Engine power:
+                <?php
+                echo $Vehicle1->engine_power()
+                ?></p>
             <p>Engine state:
                 <?php
                 echo $Vehicle1->engine_state() == true ? 'Start' : 'Stop';

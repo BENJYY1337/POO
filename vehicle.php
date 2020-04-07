@@ -6,9 +6,15 @@
 
 class Vehicle
 {
-    private $_wheel_condition = true; // Etat des pneus ( TRUE par defaut)
-    private $_fuel_level = 100; // Essence ( 100% par defaut)
-    private $_engine_state = false; // Etat de démarrage du moteur (FALSE par defaut)
+    /**
+     * @var boolean Etat des pneus
+     * @var int Niveau de carburant
+     * @var boolean Etat de démarrage du moteur
+     */
+
+    private $_wheel_condition = TRUE;
+    private $_fuel_level = 100;
+    private $_engine_state = FALSE;
     private $_engine_power;
     private static $_honk = 'Tuuut Tuut';
     const LOW_ENGINE_POWER = 90;
@@ -29,7 +35,7 @@ class Vehicle
     }
     public function engine_start()
     {
-        $rand_value = rand(1, 100);
+        $rand_value = rand(0, 100);
         if ($rand_value > 20) {
             $this->_engine_state = true;
         } else {
